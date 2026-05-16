@@ -6,6 +6,10 @@ import tempfile
 import os
 from models.report import EngagementData
 from config import Config
+
+logger = logging.getLogger(__name__)
+
+class TikTokExtractor:
     def __init__(self):
         self.ydl_opts = {
             'quiet': True,
